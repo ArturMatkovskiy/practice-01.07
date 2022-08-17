@@ -1,7 +1,7 @@
 :root{
     --page-bg-color: #f9f9fd;
     --primary-text-color:#212121;
-    --card-set-gap:66px;
+    --card-set-gap:40px;
     --card-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
 
@@ -60,4 +60,33 @@ a{
 padding-left: 20px;
 }
 
+.container{
+    width: 960px;
+    height: 200px;
+    /* background: antiquewhite; */
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
 
+.card-set{
+/* outline: 1px solid tomato; */
+margin: 0;
+padding: 0;
+display: flex;
+flex-wrap: wrap;
+margin-left: calc(-1 * var(--card-set-gap));
+margin-top: calc(-1 * var(--card-set-gap));
+}
+
+
+.card-set > .item{
+flex-basis: calc(100%/3 - 40px);
+/* outline: 1px solid blue; */
+margin-left: var(--card-set-gap);
+margin-top: var(--card-set-gap);
+box-shadow: var(--card-shadow);
+border-radius: 10px;
+overflow: hidden;
+}
