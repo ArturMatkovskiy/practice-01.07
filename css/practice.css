@@ -82,7 +82,7 @@ margin-top: calc(-1 * var(--card-set-gap));
 
 
 .card-set > .item{
-flex-basis: calc(100%/3 - 40px);
+flex-basis: calc(100%/3 - var(--card-set-gap));
 /* outline: 1px solid blue; */
 margin-left: var(--card-set-gap);
 margin-top: var(--card-set-gap);
